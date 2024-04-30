@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "plugins": [ 
+      { 
+        "name": "@0no-co/graphqlsp", 
+        "schema": "./schema.graphql", 
+        "tadaOutputLocation": "./src/graphql-env.d.ts"
+      } 
+    ] 
+  },
+  "include": ["vite.config.ts"]
+}
